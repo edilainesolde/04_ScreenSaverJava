@@ -141,7 +141,8 @@ public class ScreenSaver extends JFrame {
             /******************************
             ** ↓ Mova suas formas aqui ↓ **
             ******************************/
-            
+            r.mover(CANVAS_WIDTH, CANVAS_HEIGHT);
+
 
 
 
