@@ -1,9 +1,5 @@
 package view;
 
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.Timer;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -13,7 +9,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import model.Forma;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.Timer;
+import model.Retangulo;
+
 
 public class ScreenSaver extends JFrame {
 
@@ -54,7 +54,8 @@ public class ScreenSaver extends JFrame {
         /*********************************
         ** ↓ Declare suas formas aqui ↓ **
         *********************************/
-       Forma forma;
+       Retangulo r;
+
 
 
 
@@ -111,7 +112,8 @@ public class ScreenSaver extends JFrame {
             /***********************************
             ** ↓ Instancie suas formas aqui ↓ **
             ***********************************/
-            forma = new Forma(200, 100);
+            r = new Retangulo(200, 100, 200, 200);
+    
 
 
 
@@ -157,7 +159,7 @@ public class ScreenSaver extends JFrame {
             /*********************************
             ** ↓ Desenhe suas formas aqui ↓ **
             *********************************/
-            forma.desenhar(g2d);
+            r.desenhar(g2d);
 
 
 

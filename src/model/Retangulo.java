@@ -11,11 +11,4 @@ public class Retangulo extends Forma {
         this.base = base;
         this.altura = altura;
     }
-
-    @Override
-    public void desenhar(Graphics2D g) {
-        g.setColor(getCor());
-        g.fillRect(getX(), getY(), base, altura);
-    }
-
 }
