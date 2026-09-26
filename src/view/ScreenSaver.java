@@ -13,8 +13,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-
-import model.*;
+import model.Forma;
 
 public class ScreenSaver extends JFrame {
 
@@ -55,7 +54,8 @@ public class ScreenSaver extends JFrame {
         /*********************************
         ** ↓ Declare suas formas aqui ↓ **
         *********************************/
-        
+       Forma forma;
+
 
 
 
@@ -111,7 +111,8 @@ public class ScreenSaver extends JFrame {
             /***********************************
             ** ↓ Instancie suas formas aqui ↓ **
             ***********************************/
-            
+            forma = new Forma(200, 100);
+
 
 
 
@@ -156,6 +157,7 @@ public class ScreenSaver extends JFrame {
             /*********************************
             ** ↓ Desenhe suas formas aqui ↓ **
             *********************************/
+            forma.desenhar(g2d);
 
 
 
